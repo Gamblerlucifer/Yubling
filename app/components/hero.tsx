@@ -168,12 +168,12 @@ export default function Hero() {
                       <p className="text-sm font-medium text-white truncate leading-snug mb-1">
                         {item.title}
                       </p>
-                      <div className="flex items-center gap-2 text-[11px] text-zinc-400">
-                        <span>{item.channel}</span>
-                        <span>·</span>
-                        <span>{item.subs} 구독</span>
-                        <span>·</span>
-                        <span>{item.uploaded}</span>
+                      <div className="flex items-center gap-1.5 text-[11px] text-zinc-400 overflow-hidden whitespace-nowrap">
+                        <span className="truncate max-w-[70px]">{item.channel}</span>
+                        <span className="flex-none">·</span>
+                        <span className="flex-none">{item.subs}</span>
+                        <span className="flex-none">·</span>
+                        <span className="flex-none">{item.uploaded}</span>
                       </div>
                     </div>
 
