@@ -43,7 +43,7 @@ export default function Footer() {
               </div>
               <span className="text-white font-semibold text-sm tracking-tight">Yubling</span>
             </Link>
-            <p className="text-zinc-500 text-sm leading-relaxed max-w-[200px]">
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-[200px]">
               유튜버 생산성을 높이는
               <br />
               AI 분석 워크스페이스
@@ -60,7 +60,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-zinc-500 hover:text-white transition-colors duration-150"
+                    className="text-sm text-zinc-400 hover:text-white transition-colors duration-150"
                   >
                     {link.label}
                   </Link>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-zinc-500 hover:text-white transition-colors duration-150"
+                    className="text-sm text-zinc-400 hover:text-white transition-colors duration-150"
                   >
                     {link.label}
                   </Link>
@@ -98,7 +98,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-zinc-500 hover:text-white transition-colors duration-150"
+                    className="text-sm text-zinc-400 hover:text-white transition-colors duration-150"
                   >
                     {link.label}
                   </Link>
@@ -110,8 +110,8 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-6 border-t border-white/[0.06]">
-          <p className="text-xs text-zinc-600">© 2026 Yubling. All rights reserved.</p>
-          <p className="text-xs text-zinc-600">
+          <p className="text-xs text-zinc-400">© 2026 Yubling. All rights reserved.</p>
+          <p className="text-xs text-zinc-400">
             Made with ♥ for Korean YouTubers
           </p>
         </div>

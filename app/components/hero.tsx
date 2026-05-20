@@ -145,7 +145,7 @@ export default function Hero() {
                 <span className="text-xs font-medium text-zinc-300">Viral Search</span>
                 <div className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#FF3B5C]" />
-                  <span className="text-[10px] text-zinc-500">실시간 분석 중</span>
+                  <span className="text-[10px] text-zinc-400">실시간 분석 중</span>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@ export default function Hero() {
                       <p className="text-sm font-medium text-white truncate leading-snug mb-1">
                         {item.title}
                       </p>
-                      <div className="flex items-center gap-2 text-[11px] text-zinc-500">
+                      <div className="flex items-center gap-2 text-[11px] text-zinc-400">
                         <span>{item.channel}</span>
                         <span>·</span>
                         <span>{item.subs} 구독</span>
@@ -195,7 +195,7 @@ export default function Hero() {
 
               {/* Footer */}
               <div className="px-5 py-3 border-t border-white/[0.06] flex items-center justify-between">
-                <span className="text-[11px] text-zinc-600">1,284개 영상 분석 완료</span>
+                <span className="text-[11px] text-zinc-400">1,284개 영상 분석 완료</span>
                 <Link
                   href="/tools/viral-search"
                   className="text-[11px] text-[#7C5CFF] hover:text-[#9B7FFF] transition-colors"

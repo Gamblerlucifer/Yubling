@@ -42,7 +42,7 @@ export default function BuildInPublic() {
                     className={`flex-none w-9 h-9 rounded-full border flex items-center justify-center text-[10px] font-bold z-10 ${
                       ep.done
                         ? 'bg-[#7C5CFF] border-[#7C5CFF] text-white'
-                        : 'bg-[#0F1117] border-white/10 text-zinc-500'
+                        : 'bg-[#0F1117] border-white/10 text-zinc-400'
                     }`}
                     aria-hidden="true"
                   >
@@ -51,13 +51,13 @@ export default function BuildInPublic() {
 
                   {/* Content */}
                   <div className="pt-1.5 pb-2">
-                    <p className="text-[11px] text-zinc-500 mb-0.5">{ep.ep}</p>
+                    <p className="text-[11px] text-zinc-400 mb-0.5">{ep.ep}</p>
                     <p
                       className={`text-sm font-semibold mb-1 ${ep.done ? 'text-white' : 'text-zinc-400'}`}
                     >
                       {ep.title}
                     </p>
-                    <p className="text-sm text-zinc-500 leading-relaxed">{ep.desc}</p>
+                    <p className="text-sm text-zinc-400 leading-relaxed">{ep.desc}</p>
                   </div>
                 </li>
               ))}

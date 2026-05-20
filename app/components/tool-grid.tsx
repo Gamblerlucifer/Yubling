@@ -117,7 +117,7 @@ export default function ToolGrid() {
               <h3 className="text-white font-semibold text-base mb-1.5">{tool.name}</h3>
 
               {/* Desc */}
-              <p className="text-zinc-500 text-sm leading-relaxed mb-4">{tool.desc}</p>
+              <p className="text-zinc-400 text-sm leading-relaxed mb-4">{tool.desc}</p>
 
               {/* Example result */}
               <div

@@ -22,7 +22,7 @@ export default function SocialProof() {
         {doubled.map((item, i) => (
           <div key={i} className="flex items-center gap-3 flex-none">
             <span className="text-sm font-semibold text-white tabular-nums">{item.value}</span>
-            <span className="text-xs text-zinc-500">{item.label}</span>
+            <span className="text-xs text-zinc-400">{item.label}</span>
             <span className="w-px h-3 bg-white/10" aria-hidden="true" />
           </div>
         ))}

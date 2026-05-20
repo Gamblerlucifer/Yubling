@@ -74,10 +74,10 @@ export default function LiveDashboard() {
               key={stat.label}
               className="rounded-2xl border border-white/[0.08] bg-[#131722] p-5"
             >
-              <p className="text-xs text-zinc-500 mb-2">{stat.label}</p>
+              <p className="text-xs text-zinc-400 mb-2">{stat.label}</p>
               <p className="text-2xl font-bold text-white tabular-nums">
                 <AnimatedNumber target={stat.value} />
-                <span className="text-sm font-normal text-zinc-500 ml-1">{stat.unit}</span>
+                <span className="text-sm font-normal text-zinc-400 ml-1">{stat.unit}</span>
               </p>
               <div
                 className="mt-3 h-0.5 rounded-full w-full opacity-30"
@@ -99,7 +99,7 @@ export default function LiveDashboard() {
               />
               <span className="text-xs font-medium text-zinc-300">실시간 처리 Queue</span>
             </div>
-            <span className="text-[11px] text-zinc-500">
+            <span className="text-[11px] text-zinc-400">
               {tick % 30 < 15 ? '3명 대기 중' : '2명 대기 중'}
             </span>
           </div>
@@ -136,17 +136,18 @@ export default function LiveDashboard() {
                             background: 'linear-gradient(90deg, #7C5CFF, #FF3B5C)',
                           }}
                           role="progressbar"
+                          aria-label="AI 처리 진행률"
                           aria-valuenow={progress}
                           aria-valuemin={0}
                           aria-valuemax={100}
                         />
                       </div>
-                      <span className="text-[11px] text-zinc-500 tabular-nums flex-none">
+                      <span className="text-[11px] text-zinc-400 tabular-nums flex-none">
                         {progress}%
                       </span>
                     </div>
                   ) : (
-                    <p className="text-[11px] text-zinc-600">
+                    <p className="text-[11px] text-zinc-400">
                       대기 중 · 예상 {eta + i * 12}초
                     </p>
                   )}
@@ -168,7 +169,7 @@ export default function LiveDashboard() {
 
           {/* Footer */}
           <div className="px-5 py-3 border-t border-white/[0.06]">
-            <p className="text-[11px] text-zinc-600">
+            <p className="text-[11px] text-zinc-400">
               평균 처리 시간 <span className="text-zinc-400">12초</span> · 오늘 처리 완료{' '}
               <span className="text-zinc-400">2,847건</span>
             </p>

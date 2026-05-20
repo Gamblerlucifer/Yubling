@@ -94,9 +94,9 @@ export default function Pricing() {
                 <p className="text-zinc-400 text-sm mb-1">{plan.name}</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl font-bold text-white">{plan.price}</span>
-                  <span className="text-zinc-500 text-sm">{plan.period}</span>
+                  <span className="text-zinc-400 text-sm">{plan.period}</span>
                 </div>
-                <p className="text-zinc-500 text-xs mt-1">{plan.desc}</p>
+                <p className="text-zinc-400 text-xs mt-1">{plan.desc}</p>
               </div>
 
               <ul className="space-y-2.5 mb-8 flex-1">
