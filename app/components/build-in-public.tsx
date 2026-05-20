@@ -10,12 +10,12 @@ export default function BuildInPublic() {
   return (
     <section id="build-in-public" className="py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-[1280px] px-6">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-xs text-zinc-400">
             🚧 Build in Public
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
             만드는 과정을 공개합니다
           </h2>
           <p className="text-zinc-400 text-base mb-12">

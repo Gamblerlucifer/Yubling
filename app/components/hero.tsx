@@ -21,7 +21,7 @@ const mockResults = [
     subs: '9.1K',
     viralScore: 94,
     uploaded: '3일 전',
-    accent: '#7C5CFF',
+    accent: '#9B7FFF',
   },
   {
     rank: 3,
@@ -59,7 +59,7 @@ export default function Hero() {
               🚧 Build in Public
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.1] mb-5">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.1] mb-5">
               떡상한 이유를
               <br />
               <span
@@ -158,12 +158,10 @@ export default function Hero() {
                   >
                     {/* Thumbnail */}
                     <div
-                      className="flex-none w-[88px] h-[52px] rounded-lg flex items-center justify-center text-xs font-bold text-white/20"
+                      className="flex-none w-[88px] h-[52px] rounded-lg"
                       style={{ background: item.thumbnail }}
                       aria-hidden="true"
-                    >
-                      #{item.rank}
-                    </div>
+                    />
 
                     {/* Info */}
                     <div className="flex-1 min-w-0">
@@ -198,7 +196,7 @@ export default function Hero() {
                 <span className="text-[11px] text-zinc-400">1,284개 영상 분석 완료</span>
                 <Link
                   href="/tools/viral-search"
-                  className="text-[11px] text-[#7C5CFF] hover:text-[#9B7FFF] transition-colors"
+                  className="text-[11px] text-[#9B7FFF] hover:text-[#B8A4FF] transition-colors"
                 >
                   전체 보기 →
                 </Link>

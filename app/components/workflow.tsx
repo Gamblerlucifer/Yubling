@@ -1,9 +1,9 @@
 const steps = [
   { icon: '🔥', title: 'Viral Search', sub: '떡상 영상 발견', color: '#FF3B5C' },
-  { icon: '📊', title: 'Channel Copy', sub: '패턴 분석', color: '#7C5CFF' },
+  { icon: '📊', title: 'Channel Copy', sub: '패턴 분석', color: '#9B7FFF' },
   { icon: '✍️', title: 'Title Maker', sub: '제목 생성', color: '#4DA3FF' },
   { icon: '📝', title: 'Script Writer', sub: '대본 작성', color: '#FF3B5C' },
-  { icon: '⚡', title: 'Shorts Maker', sub: '쇼츠 구조화', color: '#7C5CFF' },
+  { icon: '⚡', title: 'Shorts Maker', sub: '쇼츠 구조화', color: '#9B7FFF' },
   { icon: '⚙️', title: 'Upload Settings', sub: '업로드 완료', color: '#4DA3FF' },
 ]
 
@@ -12,7 +12,7 @@ export default function Workflow() {
     <section id="workflow" className="py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-[1280px] px-6">
         <div className="mb-12 max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
             유튜브 제작 시간을 줄이는 워크플로우
           </h2>
           <p className="text-zinc-400 text-base">

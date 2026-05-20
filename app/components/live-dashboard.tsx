@@ -54,7 +54,7 @@ export default function LiveDashboard() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#FF3B5C] animate-pulse" aria-hidden="true" />
             실시간 AI 처리 현황
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
             지금도 분석 중입니다
           </h2>
           <p className="text-zinc-400 text-base">
@@ -158,7 +158,7 @@ export default function LiveDashboard() {
                   className={`flex-none text-[10px] font-medium px-2 py-0.5 rounded-full ${
                     item.status === 'running'
                       ? 'bg-[#FF3B5C]/10 text-[#FF3B5C]'
-                      : 'bg-white/[0.04] text-zinc-500'
+                      : 'bg-white/[0.04] text-zinc-400'
                   }`}
                 >
                   {item.status === 'running' ? '처리 중' : '대기'}

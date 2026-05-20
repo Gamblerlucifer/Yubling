@@ -8,7 +8,6 @@ type Plan = {
   features: string[]
   cta: string
   featured: boolean
-  accent?: string
 }
 
 const plans: Plan[] = [
@@ -18,41 +17,41 @@ const plans: Plan[] = [
     period: '/ 월',
     desc: '시작은 무료로',
     features: [
-      'Viral Search 하루 5회',
-      'Title Maker 하루 3회',
-      'Tag Extractor 무제한',
-      '기본 분석 기능',
+      'Viral Search 5회/일',
+      'Tag Extractor 10회/일',
+      'Title Maker 3회/일',
+      'Script Writer 3회/일',
+      'BYOK 지원 (베타)',
     ],
     cta: '무료로 시작',
     featured: false,
   },
   {
     name: 'Starter',
-    price: '$5',
+    price: '$10',
     period: '/ 월',
     desc: '하루 커피 한 잔으로',
     features: [
       'Viral Search 무제한',
-      '모든 AI 툴 무제한',
-      'Script Writer',
+      'Tag Extractor 무제한',
+      'AI 툴 30회/일',
+      'Channel Copy (채널 3개)',
       'Shorts Maker',
-      'Upload Settings',
-      '우선 처리 Queue',
+      'BYOK 지원',
     ],
     cta: '즉시 시작하기',
     featured: true,
-    accent: '#7C5CFF',
   },
   {
     name: 'Pro',
-    price: '$15',
+    price: '$30',
     period: '/ 월',
     desc: '본격 유튜버를 위해',
     features: [
       'Starter 전체 포함',
-      'Channel Copy 분석',
-      'API 연동',
-      'Bulk 생성',
+      'AI 툴 100회/일',
+      'Channel Copy (채널 20개)',
+      'Persona 저장 5개',
       '전용 지원',
       '최신 기능 Early Access',
     ],
@@ -66,7 +65,7 @@ export default function Pricing() {
     <section id="pricing" className="py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-[1280px] px-6">
         <div className="mb-12 text-center max-w-xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
             하루 커피 한 잔으로 유튜버가 되볼래?
           </h2>
           <p className="text-zinc-400 text-base">복잡한 계약 없이. 언제든 취소 가능.</p>
@@ -76,20 +75,12 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`flex-1 rounded-3xl border p-6 flex flex-col transition-transform duration-200 ${
+              className={`flex-1 rounded-3xl border p-6 flex flex-col transition-shadow duration-200 ${
                 plan.featured
-                  ? 'border-[#7C5CFF]/60 bg-[#131722] scale-[1.03] shadow-lg shadow-[#7C5CFF]/10 z-10'
+                  ? 'border-[#9B7FFF]/60 bg-[#131722] shadow-lg shadow-[#9B7FFF]/10'
                   : 'border-white/[0.08] bg-[#131722]'
               }`}
             >
-              {plan.featured && (
-                <div className="mb-4">
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#7C5CFF]/20 text-[#9B7FFF]">
-                    추천
-                  </span>
-                </div>
-              )}
-
               <div className="mb-5">
                 <p className="text-zinc-400 text-sm mb-1">{plan.name}</p>
                 <div className="flex items-baseline gap-1">
@@ -104,7 +95,7 @@ export default function Pricing() {
                   <li key={f} className="flex items-start gap-2 text-sm text-zinc-300">
                     <svg
                       className="w-4 h-4 flex-none mt-0.5"
-                      style={{ color: plan.accent ?? '#A1A7B3' }}
+                      style={{ color: plan.featured ? '#9B7FFF' : '#A1A7B3' }}
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -131,7 +122,7 @@ export default function Pricing() {
                 }`}
                 style={
                   plan.featured
-                    ? { background: 'linear-gradient(135deg, #7C5CFF, #FF3B5C)' }
+                    ? { background: 'linear-gradient(135deg, #9B7FFF, #FF3B5C)' }
                     : {}
                 }
               >

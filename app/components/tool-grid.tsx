@@ -24,7 +24,7 @@ const tools: Tool[] = [
     desc: 'URL만 입력하면 숨겨진 태그 즉시 추출',
     example: 'youtube.com/watch?v=xxx → 태그 23개 복사',
     href: '/tools/tag-extractor',
-    accent: '#7C5CFF',
+    accent: '#9B7FFF',
   },
   {
     icon: '📝',
@@ -48,7 +48,7 @@ const tools: Tool[] = [
     desc: '채널 컨셉·말투·브랜딩 방향 생성',
     example: '"30대 직장인 재테크" → 페르소나 완성',
     href: '/tools/persona',
-    accent: '#7C5CFF',
+    accent: '#9B7FFF',
   },
   {
     icon: '🖼️',
@@ -72,7 +72,7 @@ const tools: Tool[] = [
     desc: '경쟁 채널 패턴·제목·업로드 분석',
     example: '채널 URL → 제목 패턴·최적 업로드 시간',
     href: '/tools/channel-copy',
-    accent: '#7C5CFF',
+    accent: '#9B7FFF',
   },
   {
     icon: '⚡',
@@ -90,7 +90,7 @@ export default function ToolGrid() {
       <div className="mx-auto max-w-[1280px] px-6">
         {/* Header */}
         <div className="mb-12 max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
             유튜버를 위한 AI 툴 생태계
           </h2>
           <p className="text-zinc-400 text-base leading-relaxed">
