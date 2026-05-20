@@ -65,8 +65,8 @@ export default function Pricing() {
     <section id="pricing" className="py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-[1280px] px-6">
         <div className="mb-12 text-center max-w-xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
-            하루 커피 한 잔으로 유튜버가 되볼래?
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3 whitespace-nowrap">
+            하루 커피값으로 유튜버가 되볼래?
           </h2>
           <p className="text-zinc-400 text-base">복잡한 계약 없이. 언제든 취소 가능.</p>
         </div>
