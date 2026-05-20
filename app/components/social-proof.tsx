@@ -16,7 +16,7 @@ export default function SocialProof() {
       className="relative overflow-hidden border-y border-white/[0.06] py-5 bg-[#0F1117]/60"
     >
       <div
-        className="flex gap-12 animate-marquee whitespace-nowrap"
+        className="flex gap-12 whitespace-nowrap"
         style={{ animation: 'marquee 28s linear infinite' }}
       >
         {doubled.map((item, i) => (

@@ -131,7 +131,7 @@ export default function ToolGrid() {
 
               {/* CTA */}
               <div
-                className="text-xs font-medium flex items-center gap-1 transition-gap duration-150 group-hover:gap-2"
+                className="text-xs font-medium flex items-center gap-1 transition-all duration-150 group-hover:gap-2"
                 style={{ color: tool.accent }}
               >
                 바로 사용하기

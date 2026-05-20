@@ -1,12 +1,5 @@
 import type { Metadata } from 'next'
-import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: 'Yubling — 유튜브 떡상 영상 분석 AI 플랫폼',
@@ -143,7 +136,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ko" className={jetbrainsMono.variable}>
+    <html lang="ko">
       <head>
         <script
           type="application/ld+json"

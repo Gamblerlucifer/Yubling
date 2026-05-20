@@ -65,7 +65,7 @@ export default function FAQ() {
                   </button>
                 </dt>
                 <dd
-                  className={`overflow-hidden transition-all duration-200 ${open === i ? 'max-h-48' : 'max-h-0'}`}
+                  className={`overflow-hidden transition-all duration-200 ${open === i ? 'max-h-96' : 'max-h-0'}`}
                 >
                   <p className="px-5 pb-4 text-sm text-zinc-400 leading-relaxed">{faq.a}</p>
                 </dd>

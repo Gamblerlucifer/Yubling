@@ -78,7 +78,7 @@ export default function Pricing() {
               key={plan.name}
               className={`flex-1 rounded-3xl border p-6 flex flex-col transition-transform duration-200 ${
                 plan.featured
-                  ? 'border-[#7C5CFF]/60 bg-[#131722] scale-[1.03] shadow-lg shadow-[#7C5CFF]/10'
+                  ? 'border-[#7C5CFF]/60 bg-[#131722] scale-[1.03] shadow-lg shadow-[#7C5CFF]/10 z-10'
                   : 'border-white/[0.08] bg-[#131722]'
               }`}
             >
