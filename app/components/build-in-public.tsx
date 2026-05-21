@@ -1,9 +1,9 @@
 const episodes = [
-  { ep: 'EP.01', title: '도메인 구매', desc: 'yubling.com 등록. 이름은 YouTube + Sibling.', done: true },
+  { ep: 'EP.01', title: '도메인 구매', desc: 'yubling.com 등록. Y=Why, U=유튜브, bling=블링블링(떡상).', done: true },
   { ep: 'EP.02', title: '랜딩 공개', desc: '디자인 시스템 + SEO 구조 완성. Lighthouse 100점 목표.', done: true },
   { ep: 'EP.03', title: 'Viral Search 공개', desc: '유튜브 바이럴 영상 탐지 첫 번째 툴 오픈.', done: true },
   { ep: 'EP.04', title: 'AI 기능 추가', desc: 'Title Maker, Script Writer, Shorts Maker 순차 오픈.', done: false },
-  { ep: 'EP.05', title: '결제 시스템 오픈', desc: 'Stripe 연동 + Starter/Pro 플랜 정식 출시.', done: false },
+  { ep: 'EP.05', title: '결제 시스템 오픈', desc: 'Paddle 연동 + Starter/Pro 플랜 정식 출시.', done: false },
 ]
 
 export default function BuildInPublic() {
