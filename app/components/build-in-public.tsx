@@ -15,7 +15,7 @@ export default function BuildInPublic() {
             🚧 Build in Public
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-[clamp(1.25rem,5.5vw,2.5rem)] font-bold text-white tracking-tight mb-3">
             만드는 과정을 공개합니다
           </h2>
           <p className="text-zinc-400 text-base mb-12">

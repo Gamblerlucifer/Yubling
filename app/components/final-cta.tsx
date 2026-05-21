@@ -12,7 +12,7 @@ export default function FinalCTA() {
             border: '1px solid rgba(124,92,255,0.2)',
           }}
         >
-          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-4 max-w-xl mx-auto whitespace-nowrap">
+          <h2 className="text-[clamp(1.25rem,5.5vw,2.5rem)] font-bold text-white tracking-tight mb-4 max-w-xl mx-auto">
             떡상 패턴을 분석해보세요
           </h2>
           <p className="text-zinc-400 text-base leading-relaxed mb-8 max-w-md mx-auto">

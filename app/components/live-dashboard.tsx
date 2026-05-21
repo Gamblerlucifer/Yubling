@@ -54,7 +54,7 @@ export default function LiveDashboard() {
             <span className="w-1.5 h-1.5 rounded-full bg-[#FF3B5C] animate-pulse" aria-hidden="true" />
             실시간 AI 처리 현황
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-[clamp(1.25rem,5.5vw,2.5rem)] font-bold text-white tracking-tight mb-3">
             지금도 분석 중입니다
           </h2>
           <p className="text-zinc-400 text-base">

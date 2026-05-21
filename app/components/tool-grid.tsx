@@ -90,7 +90,7 @@ export default function ToolGrid() {
       <div className="mx-auto max-w-[1280px] px-6">
         {/* Header */}
         <div className="mb-12 max-w-xl">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3">
+          <h2 className="text-[clamp(1.25rem,5.5vw,2.5rem)] font-bold text-white tracking-tight mb-3">
             유튜버를 위한 AI 툴 생태계
           </h2>
           <p className="text-zinc-400 text-base leading-relaxed">

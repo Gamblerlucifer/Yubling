@@ -12,7 +12,7 @@ export default function Workflow() {
     <section id="workflow" className="py-20 md:py-28 border-t border-white/[0.06]">
       <div className="mx-auto max-w-[1280px] px-6">
         <div className="mb-12 max-w-xl">
-          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-3 whitespace-nowrap">
+          <h2 className="text-[clamp(1.25rem,5.5vw,2.5rem)] font-bold text-white tracking-tight mb-3">
             제작 시간을 줄이는 워크플로우
           </h2>
           <p className="text-zinc-400 text-base">
