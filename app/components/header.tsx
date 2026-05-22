@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { createClient } from '@/lib/supabase/client'
+import type { User } from '@supabase/supabase-js'
 
 const navLinks = [
   { label: 'Tools', href: '#tools' },
@@ -13,11 +15,25 @@ const navLinks = [
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [user, setUser] = useState<User | null>(null)
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 8)
     window.addEventListener('scroll', handler, { passive: true })
     return () => window.removeEventListener('scroll', handler)
+  }, [])
+
+  useEffect(() => {
+    if (
+      !process.env.NEXT_PUBLIC_SUPABASE_URL ||
+      !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+    ) return
+    const supabase = createClient()
+    supabase.auth.getUser().then(({ data }) => setUser(data.user))
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null)
+    })
+    return () => subscription.unsubscribe()
   }, [])
 
   return (
@@ -54,18 +70,29 @@ export default function Header() {
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-          <Link
-            href="/login"
-            className="hidden sm:block text-zinc-400 hover:text-white text-sm transition-colors duration-150"
-          >
-            Login
-          </Link>
-          <Link
-            href="/signup"
-            className="h-10 px-4 rounded-xl bg-white text-[#06070A] text-sm font-medium hover:bg-white/90 transition-colors duration-150 flex items-center"
-          >
-            Get Started
-          </Link>
+          {user ? (
+            <Link
+              href="/dashboard"
+              className="h-10 px-4 rounded-xl bg-[#7C5CFF] hover:bg-[#6B4FE0] text-white text-sm font-medium transition-colors duration-150 flex items-center"
+            >
+              대시보드 →
+            </Link>
+          ) : (
+            <>
+              <Link
+                href="/login"
+                className="hidden sm:block text-zinc-400 hover:text-white text-sm transition-colors duration-150"
+              >
+                로그인
+              </Link>
+              <Link
+                href="/signup"
+                className="h-10 px-4 rounded-xl bg-white text-[#06070A] text-sm font-medium hover:bg-white/90 transition-colors duration-150 flex items-center"
+              >
+                베타 가입
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </header>
