@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://yubling.com' },
+  verification: {
+    google: 'SiEVcmW2M3B_clwewgO9L8l26LIE5KH9_If5ihHJfLU',
+  },
 }
 
 const jsonLdOrganization = {
