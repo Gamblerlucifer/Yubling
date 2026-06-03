@@ -1,8 +1,11 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // Enable React strict mode for better development warnings
   reactStrictMode: true,
+
+  turbopack: {
+    root: 'C:\\Users\\jjun1\\Desktop\\Project\\yubling',
+  },
 
   // Image optimization domains
   images: {

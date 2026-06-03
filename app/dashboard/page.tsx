@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import { signOut } from '@/app/actions/auth'
+import ReferralForm from './referral-form'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = { title: '대시보드 — Yubling' }
@@ -93,16 +94,18 @@ export default async function DashboardPage() {
       <main className="max-w-5xl mx-auto px-6 py-12">
         {/* Beta access banner */}
         {!hasBetaAccess && (
-          <div className="mb-8 p-4 rounded-xl border border-amber-500/20 bg-amber-500/[0.06] flex items-start gap-3">
-            <span className="text-amber-400 text-lg mt-0.5">🔒</span>
-            <div>
-              <p className="text-sm font-medium text-amber-300">베타 접근 코드가 필요합니다</p>
-              <p className="text-xs text-amber-400/70 mt-0.5">
-                매주 목요일 유튜브 영상에 코드가 공개됩니다.{' '}
-                <Link href="/signup" className="underline hover:text-amber-300">
-                  코드 입력하기 →
-                </Link>
-              </p>
+          <div className="mb-8 p-4 rounded-xl border border-amber-500/20 bg-amber-500/[0.06]">
+            <div className="flex items-start gap-3">
+              <span className="text-amber-400 text-lg mt-0.5">🔒</span>
+              <div className="flex-1">
+                <p className="text-sm font-medium text-amber-300">베타 접근 코드가 필요합니다</p>
+                <p className="text-xs text-amber-400/70 mt-0.5">
+                  매주 목요일 유튜브 영상에 코드가 공개됩니다.
+                </p>
+                <div className="relative">
+                  <ReferralForm />
+                </div>
+              </div>
             </div>
           </div>
         )}
