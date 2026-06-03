@@ -3,9 +3,6 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
-  turbopack: {
-    root: 'C:\\Users\\jjun1\\Desktop\\Project\\yubling',
-  },
 
   // Image optimization domains
   images: {
