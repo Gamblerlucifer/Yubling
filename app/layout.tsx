@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     '유튜브 AI',
     '유튜브 자동화',
   ],
-  metadataBase: new URL('https://yubling.com'),
+  metadataBase: new URL('https://yubling.vercel.app'),
   openGraph: {
     title: 'Yubling — 떡상한 이유를 복사하세요',
     description: '조회수 잘 나오는 영상엔 공식이 있습니다.',
-    url: 'https://yubling.com',
+    url: 'https://yubling.vercel.app',
     type: 'website',
     images: [{ url: '/og/main.jpg', width: 1200, height: 630 }],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     images: ['/og/main.jpg'],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://yubling.com' },
+  alternates: { canonical: 'https://yubling.vercel.app' },
   verification: {
     google: 'SiEVcmW2M3B_clwewgO9L8l26LIE5KH9_If5ihHJfLU',
   },
@@ -40,8 +40,8 @@ const jsonLdOrganization = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Yubling',
-  url: 'https://yubling.com',
-  logo: 'https://yubling.com/og/main.jpg',
+  url: 'https://yubling.vercel.app',
+  logo: 'https://yubling.vercel.app/og/main.jpg',
   description: '유튜버 생산성을 높이는 AI 분석 워크스페이스',
   contactPoint: {
     '@type': 'ContactPoint',
@@ -58,7 +58,7 @@ const jsonLdSoftware = {
   name: 'Yubling',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
-  url: 'https://yubling.com',
+  url: 'https://yubling.vercel.app',
   description:
     '유튜브 떡상 영상 찾기, 제목 생성, 쇼츠 구조 생성, 채널 분석까지. AI로 유튜버 제작 생산성을 높이는 플랫폼.',
   offers: [

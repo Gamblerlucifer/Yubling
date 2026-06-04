@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://yubling.com'
+  const base = 'https://yubling.vercel.app'
   const now = new Date()
 
   return [
