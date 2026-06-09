@@ -15,9 +15,9 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    // 1. 키워드로 영상 검색 (최근 50개)
+    // 1. 키워드로 영상 검색 (관련성 순 → Viral Score로 재정렬)
     const searchRes = await fetch(
-      `${YT_API}/search?part=snippet&q=${encodeURIComponent(keyword)}&type=video&order=viewCount&maxResults=20&regionCode=KR&relevanceLanguage=ko&key=${API_KEY}`
+      `${YT_API}/search?part=snippet&q=${encodeURIComponent(keyword)}&type=video&order=relevance&maxResults=20&regionCode=KR&relevanceLanguage=ko&key=${API_KEY}`
     )
     const searchData = await searchRes.json()
 
