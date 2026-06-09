@@ -1,0 +1,7 @@
+유튜브/
+node_modules/
+.next/
+*.tsbuildinfo
+yubling-prd.md
+.claude/
+.git/
