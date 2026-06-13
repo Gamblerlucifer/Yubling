@@ -9,20 +9,10 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug secret length
-        env:
-          SB_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          SB_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-        run: |
-          echo "URL length: ${#SB_URL}"
-          echo "KEY length: ${#SB_KEY}"
       - name: Ping Supabase
-        env:
-          SB_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          SB_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
         run: |
           curl -s -o /dev/null -w "%{http_code}" \
-            "$SB_URL/rest/v1/profiles?select=count" \
-            -H "apikey: $SB_KEY" \
-            -H "Authorization: Bearer $SB_KEY"
+            "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}/rest/v1/profiles?select=count" \
+            -H "apikey: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}"
           echo " → Supabase ping 완료"
